@@ -1,17 +1,10 @@
-# Webbpack Express Example App
+# Webpack Express Example App
 
 The goal of this repo is be an example of a basic but functional app built on Express and Webpack.
 
-If you want to follow along with the course, you will start from the master and switch to the appropriate numbered branches of this repo as needed. The branches are:
-- [0-initial-setup](https://github.com/udacity/fend-webpack-content/tree/0-initial-setup)
-- [1-install-webpack](https://github.com/udacity/fend-webpack-content/tree/1-install-webpack)
-- [2-add-webpack-entry](https://github.com/udacity/fend-webpack-content/tree/2-add-webpack-entry)
-- [3-webpack-output-and-loaders](https://github.com/udacity/fend-webpack-content/tree/3-webpack-output-and-loaders)
-- [4-webpack-plugins](https://github.com/udacity/fend-webpack-content/tree/4-webpack-plugins)
-- [5-webpack-mode](https://github.com/udacity/fend-webpack-content/tree/5-webpack-mode)
-- [6-webpack-for-convenience](https://github.com/udacity/fend-webpack-content/tree/6-webpack-for-convenience)
+From the Udacity Front End Web Developer Program.
 
-Each one is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step should also match to a git commit if you look at the history) which you can use as a checklist when setting up your own projects. 
+https://github.com/udacity/fend-webpack-content
 
 ## Get Up and Running
 
@@ -21,7 +14,49 @@ Fork this repo, then clone your forked repo down to your computer:
 git clone -- git@github.com:[your-user-name]/webpack-express.git --
 ```
 
-`cd` into your new folder and run:
-- ```npm install```
-- ```npm start``` to start the app
-- this app runs on localhost:8080, but you can of course edit that in index.js
+## Enviroments (Modes)
+
+```
+npm run build-prod
+npm run build-dev
+```
+
+## Plugins
+
+```
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer");
+```
+
+## Loaders
+
+babel-loader
+
+```
+module: {
+    rules: [
+        {
+            test: '/\.js$/',
+            exclude: /node_modules/,
+            loader: "babel-loader"
+        }
+    ]
+}
+```
+
+## Notes
+
+https://stackoverflow.com/questions/59611597/error-cannot-find-module-webpack-cli-bin-config-yargs
+
+https://www.npmjs.com/package/webpack-bundle-analyzer
+
+https://webpack.js.org/concepts/
+
+Further reading:
+
+https://www.jonathancreamer.com/advanced-webpack-part-1-the-commonschunk-plugin/
+
+https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points
+
+https://webpack.js.org/guides/caching/

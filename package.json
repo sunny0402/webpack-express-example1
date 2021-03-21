@@ -7,21 +7,25 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
-    "build-dev": "webpack --config webpack.dev.js"
+    "build-dev": "webpack serve --config webpack.dev.js  --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cli": "^1.0.1",
     "express": "^4.17.1",
-    "webpack": "^5.27.0",
+    "webpack": "^5.27.1",
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "babel-loader": "^8.2.2",
-    "html-webpack-plugin": "^5.3.1"
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
