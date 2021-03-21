@@ -53,10 +53,14 @@ https://www.npmjs.com/package/webpack-bundle-analyzer
 
 https://webpack.js.org/concepts/
 
-Further reading:
+## Further reading
 
 https://www.jonathancreamer.com/advanced-webpack-part-1-the-commonschunk-plugin/
 
 https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points
 
 https://webpack.js.org/guides/caching/
+
+## Git Notes
+
+git push -u webpack-example1 main
