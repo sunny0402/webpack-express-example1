@@ -63,6 +63,10 @@ https://webpack.js.org/guides/caching/
 
 ## Git Notes
 
+git init
+git add .
+git commit -m "a message"
+git remote -v
 git push -u webpack-example1 main
 
 ## CSS/SCSS Notes
@@ -74,3 +78,17 @@ https://sass-lang.com/guide
 npm i -D @babel/core @babel/preset-env babel-loader
 
 npm i -D style-loader node-sass css-loader sass-loader
+
+## Loaders
+
+https://medium.com/a-beginners-guide-for-webpack-2/handling-images-e1a2a2c28f8d
+https://webpack.js.org/guides/typescript/
+https://getbootstrap.com/docs/4.0/getting-started/webpack/
+
+## Common CSS Problems
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS
+
+## SASS Documentation
+
+https://sass-lang.com/documentation
