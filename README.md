@@ -64,3 +64,13 @@ https://webpack.js.org/guides/caching/
 ## Git Notes
 
 git push -u webpack-example1 main
+
+## CSS/SCSS Notes
+
+https://css-tricks.com/css-custom-properties-theming/
+
+https://sass-lang.com/guide
+
+npm i -D @babel/core @babel/preset-env babel-loader
+
+npm i -D style-loader node-sass css-loader sass-loader
