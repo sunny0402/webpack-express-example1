@@ -4,7 +4,13 @@ The goal of this repo is be an example of a basic but functional app built on Ex
 
 From the Udacity Front End Web Developer Program.
 
+Navigate the branches of the repositories to view steps taken.
+
+Initial repo:
 https://github.com/udacity/fend-webpack-content
+
+With SASS and webpack config:
+https://github.com/udacity/fend-webpack-sass
 
 ## Get Up and Running
 
@@ -12,6 +18,7 @@ Fork this repo, then clone your forked repo down to your computer:
 
 ```
 git clone -- git@github.com:[your-user-name]/webpack-express.git --
+
 ```
 
 ## Enviroments (Modes)
@@ -92,3 +99,30 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS
 ## SASS Documentation
 
 https://sass-lang.com/documentation
+
+## IIFE
+
+https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+
+## For development mode
+
+npm install
+npm i -D @babel/core @babel/preset-env babel-loader
+npm i -D style-loader node-sass css-loader sass-loader
+npm i -D clean-webpack-plugin
+npm i -D html-webpack-plugin
+
+Build and start the webpack dev server at port 8080
+npm run build-dev
+
+## output.library
+
+https://webpack.js.org/configuration/output/#outputlibrary
+
+## Production
+
+generate a `dist` folder for prod
+npm install cors
+npm run build-prod
+Run the Express server on port 8081
+npm start
