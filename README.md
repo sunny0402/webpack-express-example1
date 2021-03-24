@@ -44,8 +44,11 @@ npm i -D clean-webpack-plugin
 npm i -D html-webpack-plugin
 
 npm i -D mini-css-extract-plugin
+
 //npm i -D optimize-css-assets-webpack-plugin (webpack v4)
+//https://github.com/webpack-contrib/css-minimizer-webpack-plugin
 npm i -D css-minimizer-webpack-plugin (webpack v5)
+
 npm i -D terser-webpack-plugin
 
 npm run build-prod
@@ -154,3 +157,11 @@ npm run build-prod
 ## Optimize production
 
 Website speed determined by amount of JavaScript, styling and images
+https://webpack.js.org/guides/production/
+Review plugin documentation such as Terser
+
+How to split dev/prod webpack configuration to manage overlap between dev and prod configs
+https://dev.to/didof/how-to-split-dev-prod-webpack-configuration-n53
+
+Page size
+https://stackoverflow.com/questions/38239980/measure-full-page-size-in-chrome-devtools
