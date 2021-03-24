@@ -126,3 +126,9 @@ npm install cors
 npm run build-prod
 Run the Express server on port 8081
 npm start
+
+## If dist folder not created
+
+delete node_modules
+npm i
+npm run build-prod
