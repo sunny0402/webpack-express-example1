@@ -2,9 +2,7 @@
 
 The goal of this repo is be an example of a basic but functional app built on Express and Webpack.
 
-From the Udacity Front End Web Developer Program.
-
-Navigate the branches of the repositories to view steps taken.
+From the Udacity Front End Web Developer Program.Navigate the branches of the repositories to view steps taken.
 
 Initial repo:
 https://github.com/udacity/fend-webpack-content
@@ -27,6 +25,38 @@ git clone -- git@github.com:[your-user-name]/webpack-express.git --
 npm run build-prod
 npm run build-dev
 ```
+
+## Set up
+
+Production set up: https://webpack.js.org/migrate/5/
+node --version
+
+npm i webpack webpack-cli
+npm i express
+npm i cors
+
+npm i -D babel-loader
+npm i -D webpack-dev-server
+npm i -D @babel/core @babel/preset-env babel-loader
+
+npm i -D style-loader node-sass css-loader sass-loader
+npm i -D clean-webpack-plugin
+npm i -D html-webpack-plugin
+
+npm i -D mini-css-extract-plugin
+//npm i -D optimize-css-assets-webpack-plugin (webpack v4)
+npm i -D css-minimizer-webpack-plugin (webpack v5)
+npm i -D terser-webpack-plugin
+
+npm run build-prod
+
+npm run start
+
+Note:
+
+- npm i : When run without arguments, npm install downloads dependencies defined in a package.json file and generates a node_modules folder with the installed modules.
+- dependencies are required to run, devDependencies only to develop (see package.json)
+- -D is same as --save-dev: Package will appear in your devDependencies
 
 ## Plugins
 
@@ -82,10 +112,6 @@ https://css-tricks.com/css-custom-properties-theming/
 
 https://sass-lang.com/guide
 
-npm i -D @babel/core @babel/preset-env babel-loader
-
-npm i -D style-loader node-sass css-loader sass-loader
-
 ## Loaders
 
 https://medium.com/a-beginners-guide-for-webpack-2/handling-images-e1a2a2c28f8d
@@ -119,16 +145,12 @@ npm run build-dev
 
 https://webpack.js.org/configuration/output/#outputlibrary
 
-## Production
-
-generate a `dist` folder for prod
-npm install cors
-npm run build-prod
-Run the Express server on port 8081
-npm start
-
 ## If dist folder not created
 
 delete node_modules
 npm i
 npm run build-prod
+
+## Optimize production
+
+Website speed determined by amount of JavaScript, styling and images
