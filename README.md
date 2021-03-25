@@ -78,32 +78,26 @@ To add a plugin to the project follow these steps:
 
 2. Require plugin
 
-````
-
+```
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-
 ```
 
 3. instantiate plugin
 
 ```
-
 plugins: [
 new HtmlWebPackPlugin({
 template: "./src/client/views/index.html",
 filename: "./index.html",
 }),
-
 ```
 
 4. install plugin
 
 ```
-
 npm i -D html-webpack-plugin
 //same as
 npm install html-webpack-plugin --save-dev
-
 ```
 
 ## Loaders
@@ -115,17 +109,13 @@ https://getbootstrap.com/docs/4.0/getting-started/webpack/
 babel-loader
 
 ```
-
 module: {
 rules: [
 {
 test: '/\.js$/',
 exclude: /node_modules/,
 loader: "babel-loader"
-}
-]
-}
-
+}]}
 ```
 
 ## Notes
@@ -217,5 +207,7 @@ https://www.netlify.com/blog/2017/01/03/4-key-concepts-of-webpack/
 ## Advanced webpack
 
 https://github.com/markerikson/react-redux-links/blob/master/webpack-advanced-techniques.md
+
 ```
-````
+
+```
