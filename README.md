@@ -137,6 +137,7 @@ https://webpack.js.org/guides/caching/
 git init
 git add .
 git commit -m "a message"
+git remote add <project nickname> <project URL>.git
 git remote -v
 git push -u webpack-example1 main
 
