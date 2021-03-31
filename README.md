@@ -135,13 +135,14 @@ https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points
 https://webpack.js.org/guides/caching/
 
 ## Git Notes
-
+```
 git init
 git add .
 git commit -m "a message"
 git remote add <project nickname> <project URL>.git
 git remote -v
 git push -u webpack-example1 main
+```
 
 ## CSS/SCSS Notes
 
